@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylepanier.css">
+  <script src="https://kit.fontawesome.com/94ea9d9e31.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scriptpanier.js"></script>
+<title>
+  Panier - Fruits 'R' us
+</title>
+</head>
+<header onmouseover="boing();">
+<h1 id="header">Fruits 'R' us</h1>
+<div class="icone-header"><a onclick="alert('Demande à Maxime !')"><i class="fa-solid fa-house" id="icone"></a></i></div>
+</header>
+
+<body>
+<aside>
+  <h2 class="panier">
+  Panier
+  </h2>
+  <div class="total styled" onclick="calculer();">
+    <h2 id="total">Total :</h2>
+  </div>
+  <div class="fa-bounce" style="--fa-animation-duration: 3s;" id="nope">
+    Attention ! Il faut manger au moins 5 fruits (et légumes) par jour !
+  </div>
+</aside>
+
+<main>
+<div class="gauche">
+  <div class="wrapper" id="nopebanane">
+    <div class="image-produit">
+      <div class="banane"></div>
+    </div>
+    <div class="description-produit">
+      <p>Bananes</p>
+    </div>
+  </div>
+  <div class="wrapper" id="nopepomme">
+    <div class="image-produit">
+      <div class="pomme"></div>
+    </div>
+    <div class="description-produit">
+    <p>Pommes</p>
+    </div>
+  </div>
+  <div class="wrapper" id="nopeorange">
+    <div class="image-produit">
+      <div class="orange"></div>
+    </div>
+    <div class="description-produit">
+    <p>Oranges</p>
+    </div>
+  </div>
+  <div class="wrapper" id="noperaisin">
+    <div class="image-produit">
+      <div class="raisin"></div>
+    </div>
+    <div class="description-produit">
+    <p>Raisins</p>
+    </div>
+  </div>
+</div>
+
+<div class="droite">
+  <div class="wrapper2" id="banane">
+    <p class="prix">4.00€ l'unité</p>
+    <div><i class="fa-solid fa-trash-can" onclick="supprimer_Banane();"></i></div>
+    <div><i class="fa-solid fa-circle-minus" id="minus_banane" onclick="enlever_Banane();"></i></div>
+    <p id="quantitébanane">15</p>
+    <div><i class="fa-solid fa-circle-plus" id="plus_banane" onclick="ajouter_Banane();"></i></div>
+  </div>
+  <div class="wrapper2" id="pomme">
+    <p class="prix">2.50€ l'unité</p>
+    <div><i class="fa-solid fa-trash-can" onclick="supprimer_Pomme();"></i></div>
+    <div><i class="fa-solid fa-circle-minus" id="minus_pomme" onclick="enlever_Pomme();"></i></div>
+    <p id="quantitépomme">1</p>
+    <div><i class="fa-solid fa-circle-plus" id="plus_pomme" onclick="ajouter_Pomme();"></i></div>
+  </div>
+  <div class="wrapper2" id="orange">
+    <p class="prix">5.60€ l'unité</p>
+    <div><i class="fa-solid fa-trash-can" onclick="supprimer_Orange();"></i></div>
+    <div><i class="fa-solid fa-circle-minus" id="minus_orange" onclick="enlever_Orange();"></i></div>
+    <p id="quantitéorange">1</p>
+    <div><i class="fa-solid fa-circle-plus" id="plus_orange" onclick="ajouter_Orange();"></i></div>
+  </div>
+  <div class="wrapper2" id="raisin">
+    <p class="prix">45€ l'unité</p>
+    <div><i class="fa-solid fa-trash-can" onclick="supprimer_Raisin();"></i></div>
+    <divx><i class="fa-solid fa-circle-minus" id="minus_raisin" onclick="enlever_Raisin();"></i></divx>
+    <p id="quantitéraisin">1</p>
+    <div><i class="fa-solid fa-circle-plus" id="plus_raisin" onclick="ajouter_Raisin();"></i></div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <a onclick="alert('Demande à Thomas !');"> <strong>Notre équipe</strong></a>
+  <p>CEFIM 2022 © <strong> <big>Alexis</big></strong> Maxime Thomas</p>
+</footer>
+</body>
+</html>

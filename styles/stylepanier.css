@@ -13,7 +13,7 @@ main:after {
 
 header {
     height: 100px;
-    background-image: url("img/details-hero.jpg");
+    background-image: url("../img/details-hero.jpg");
     color: white;
     border-radius: 0 0 10px 10px;
     width: 100%;
@@ -183,19 +183,19 @@ main .fa-solid:hover{
 }
 
 .banane {
-  background-image: url("img/banane.jpg");
+  background-image: url("../img/banane.jpg");
 }
 
 .pomme { 
-  background-image: url("img/pomme.jpg");
+  background-image: url("../img/pomme.jpg");
 }
 
 .orange { 
-  background-image: url("img/orange.jpg");
+  background-image: url("../img/orange.jpg");
 }
 
 .raisin { 
-  background-image: url("img/raisin.jpg");
+  background-image: url("../img/raisin.jpg");
 }
 
 #nope {
